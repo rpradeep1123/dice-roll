@@ -1,0 +1,42 @@
+/* Styling each Die */
+.Die{ 
+    font-size:10em; 
+    padding:0.25em; 
+    color:#007b76; 
+    } 
+    
+    /* Applying Animation */
+    .Die-shaking{ 
+    animation-name:wobble; 
+    animation-duration: 1s; 
+    } 
+    
+    @keyframes wobble { 
+    from { 
+        transform: translate3d(0, 0, 0); 
+    } 
+    15% { 
+        transform:
+                rotate3d(0, 0, 1, 60deg); 
+    } 
+    30% { 
+        transform: 
+                rotate3d(0, 0, 1, 90deg); 
+    } 
+    45% { 
+        transform:
+                rotate3d(0, 0, 1, 120deg); 
+    } 
+    60% { 
+        transform:
+                rotate3d(0, 0, 1, 180deg); 
+    } 
+    75% { 
+        transform: 
+                rotate3d(0, 0, 1, 270deg); 
+    } 
+    to { 
+        transform: translate3d(0, 0, 0); 
+    } 
+    }
+    

@@ -1,0 +1,58 @@
+.RollDice {
+    display   : flex;
+    flex-flow : column nowrap;
+    min-height: 100vh;
+}
+
+/* Shows each dice in one row */
+.RollDice-container {
+    display        : flex;
+    justify-content: center;
+    align-content  : center;
+    flex-wrap      : wrap;
+}
+
+.rollDiceControl {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.rollDiceControl .form-control {
+    padding: 1rem;
+}
+
+.rollDiceControl .form-control input {
+    padding      : 1rem;
+    border       : 1px solid #d6d4d4;
+    border-radius: 5px;
+}
+
+.rollDiceControl .form-control label {
+    font-weight : bold;
+    margin-right: 1rem;
+}
+
+/* Stylling rolldice button */
+.RollDice button {
+    width           : 15em;
+    padding         : 1.5em;
+    border          : 0px;
+    border-radius   : 10px;
+    color           : white;
+    font-weight     : bold;
+    background-color: #006910;
+    align-self      : center;
+}
+
+/* Setting hover effect on button */
+.RollDice button:hover {
+    cursor: pointer;
+}
+
+.RollDice-rolling {
+    border          : 0px;
+    border-radius   : 10px;
+    background-color: rgb(193, 183, 255) !important;
+    opacity         : 0.7
+}
